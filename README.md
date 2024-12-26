@@ -1,70 +1,71 @@
-# Portfolio-Tracker
+Steps to Run the Project Locally
+1. Clone the Repository
+First, you need to clone the project repository to your local machine. You can do this using the following command:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+bash
+Copy code
+git clone git remote add origin https://github.com/2200032547-Giridhar/Portfolio-Tracker-Frontend.git
+Replace your-username and your-repository-name with your actual GitHub username and repository name.
 
-## Available Scripts
+2. Navigate to the Project Directory
+Once the repository is cloned, navigate to the project folder:
 
-In the project directory, you can run:
+bash
+Copy code
+cd your-repository-name
+Replace your-repository-name with the name of your actual project folder.
 
-### `npm start`
+3. Install Dependencies
+Before you can run the project, you need to install the required dependencies. Run the following command inside your project folder:
 
-Runs the app in the development mode.  
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copy code
+npm install
+This will read the package.json file and install all the necessary packages for the project.
 
-The page will reload when you make changes.  
-You may also see any lint errors in the console.
+4. Run the Project Locally
+After the dependencies are installed, you can run the project in development mode using:
 
-### `npm test`
+bash
+Copy code
+npm start
+This will start the development server, and your app will be available at:
 
-Launches the test runner in the interactive watch mode.  
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+http://localhost:3000
 
-### `npm run build`
+The application will reload automatically if you make any changes to the source code.
 
-Builds the app for production to the `build` folder.  
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. Open the Project in a Browser
+Open your browser and go to http://localhost:3000 to see the application running.
 
-The build is minified and the filenames include the hashes.  
-Your app is ready to be deployed!
+Additional Information
+Running Tests:
+If you have any tests configured, you can run them with:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash
+Copy code
+npm test
+Build for Production:
+To create a production-ready version of the application, use the following command:
 
-### `npm run eject`
+bash
+Copy code
+npm run build
+This will create a build/ folder with an optimized version of the app for deployment.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Troubleshooting
+Missing Dependencies:
+If you encounter issues with missing dependencies, delete the node_modules/ folder and package-lock.json file and run npm install again:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+bash
+Copy code
+rm -rf node_modules package-lock.json
+npm install
+Permission Issues:
+On Linux/macOS, if you face permission issues while installing dependencies, you can use sudo:
 
-It will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc.) right into your project so you have full control over them. At this point, you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However, we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+bash
+Copy code
+sudo npm install
+Conclusion
+After completing the above steps, your project should be up and running locally. You can now begin developing, testing, and making changes to your application.
